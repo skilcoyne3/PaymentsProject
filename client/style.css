@@ -33,25 +33,23 @@ nav:nth-child(1) {
 
 .navlink {
     padding: 5px;
-    padding-top: 12px;
-    padding-left: 20px;
-    color: white;
-    font-size: 1.3em;
-    float: left;
+	padding-top: 35px;
+	padding-left: 20px;
+	font-size: 1.3em;
+	float: right;
 }
 
 .navlink a, .navlink a:link, .navlink a:visited, .navlink a:hover, .navlink a:active {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 20px;
 	border-radius: 4px;
-	background-color: black;
+	/*background-color: black;*/
     transition: background-color 0.4s ease;
 }
 
 .navlink a:hover {
-    transition: background-color 0.8s ease;
-    background-color: #66bdff;
+	color: grey;
 }
 
 .domoForm {
