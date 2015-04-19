@@ -16,7 +16,7 @@ html, body {
 	border-radius: 8px;
 	padding-left: 20px;
 }
-#login{
+#login #signup{
 	padding-top: 100px;
 }
 nav {
@@ -40,7 +40,7 @@ nav:nth-child(1) {
 }
 
 .navlink a, .navlink a:link, .navlink a:visited, .navlink a:hover, .navlink a:active {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 20px;
 	border-radius: 4px;
