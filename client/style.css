@@ -7,6 +7,13 @@ html, body {
 	background: white;
 	font-family: 'Arimo', sans-serif;
 }
+h4{
+	margin:20px;
+}
+#create{
+  color: rgb(233, 61, 42);
+  font-size: 1.2em;
+}
 
 #logo {
 	height: 40px;
@@ -103,7 +110,7 @@ nav:nth-child(1) {
 
 .mainForm {
     /*height: 300px; */
-	padding: 100px 20px 100px 20px;
+	padding: 50px 20px 50px 20px;
 	width: 350px;
 	margin: 0 auto;
 	text-align: center;
@@ -131,7 +138,7 @@ nav:nth-child(1) {
 	display: block;
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 10px;
 	font-size: 1.2em;
 	width: 290px;
 	background-color: #E93D2A;
@@ -155,7 +162,7 @@ nav:nth-child(1) {
 	font-size: 1.1em;
 	height: 50px;
 	border-radius: 6px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 #user:focus, #pass:focus, #pass2:focus {
