@@ -12,14 +12,14 @@ block body
   section#signup
     form#signupForm(class="mainForm", name="signupForm", action="/signup", method="POST")
       h2 Sign Up
-      label(for="username") Create Username: 
-      input#user(type="text", name="username")
-      label(for="pass") Create Password: 
-      input#pass(type="password", name="pass")
-      label(for="pass2") Confirm Password: 
-      input#pass2(type="password", name="pass2")
-      a#signupSubmit(class="formSubmit", href="#") Sign up
-	  a(href="/login" class="logbtn") Login
+      label(for='username') Create Username: 
+      input#user(type='text', name='username')
+      label(for='pass') Create Password: 
+      input#pass(type='password', name='pass')
+      label(for='pass2') Confirm Password: 
+      input#pass2(type='password', name='pass2')
+      a#signupSubmit.formSubmit(href='#') Sign up
+      a.logbtn(href='/login') login
   #domoMessage
     img#speech(src="/assets/img/speech.png", alt="speech box")
     h3
