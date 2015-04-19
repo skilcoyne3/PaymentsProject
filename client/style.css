@@ -10,7 +10,7 @@ html, body {
 h4{
 	margin:20px;
 }
-#create{
+.create{
   color: rgb(233, 61, 42);
   font-size: 1.2em;
 }
