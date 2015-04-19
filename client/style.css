@@ -4,25 +4,32 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+	background: #E93D2A;
+	font-family: 'Arimo', sans-serif;
 }
 
 #logo {
-    height: 40px;
-    width: 40;
-    padding-top: 5px;
-    float:left;
-    border-radius: 8px;
+	height: 40px;
+	width: 40px;
+	padding-top: 25px;
+	float: left;
+	border-radius: 8px;
+	padding-left: 20px;
 }
-
+#login{
+	padding-top: 100px;
+}
 nav {
     width: 100%;
-    height: 50px;
-    background-color: #55acee;
+	height: 100px;
+	background-color: #FFFFFF;
+	border-bottom: solid 3px black;
 }
-
+/*
 nav:nth-child(1) {
     padding-left: 25px;
 }
+*/
 
 .navlink {
     padding: 5px;
@@ -36,9 +43,9 @@ nav:nth-child(1) {
 .navlink a, .navlink a:link, .navlink a:visited, .navlink a:hover, .navlink a:active {
     color: white;
     text-decoration: none;
-    padding: 5px;
-    border-radius: 4px;
-    background-color: #55acee;
+    padding: 20px;
+	border-radius: 4px;
+	background-color: black;
     transition: background-color 0.4s ease;
 }
 
@@ -97,11 +104,16 @@ nav:nth-child(1) {
 
 
 .mainForm {
-    height: 300px;
-    width: 350px;
-    margin: 0 auto;
-    padding-top: 350px;
-    font-size: 1.2em;
+    /*height: 300px; */
+	padding: 100px 20px 100px 20px;
+	width: 350px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.2em;
+	background: white;
+	border: solid 5px;
+	border-radius: 12px;
+
 }
 
 .mainForm h3 {
@@ -117,18 +129,18 @@ nav:nth-child(1) {
 }
 
 .formSubmit {
-    transition: background-color 0.4s ease;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 14px;
-    font-size: 1.2em;
-    width: 90px;
-    background-color: #55acee;
-    border-radius: 2px;
-    padding: 3px 0px;
-    color: black;
-    text-decoration: none;
+	transition: background-color 0.4s ease;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	font-size: 1.2em;
+	width: 290px;
+	background-color: #E93D2A;
+	border-radius: 2px;
+	padding: 10px 0px;
+	color: black;
+	text-decoration: none;
 }
 
 .formSubmit:link, .formSubmit:visited, .formSubmit:hover, .formSubmit:active {

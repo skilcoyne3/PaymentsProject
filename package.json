@@ -1,7 +1,7 @@
 {
-  "name": "Logins",
+  "name": "MVC Project 1",
   "version": "1.0.0",
-  "description": "A Simple Login Example using Node.js, Mongo, Redis and BCrypt",
+  "description": "login system to store data",
   "main": "./src/app.js",
   "scripts": {
     "start": "node ./src/app.js",
@@ -15,7 +15,7 @@
     "Login",
     "BCrypt"
   ],
-  "author": "Cody Van De Mark",
+  "author": "Shawn Kilcoyne",
   "license": "Apache 2.0",
   "dependencies": {
     "bcrypt": "^0.8.0",
