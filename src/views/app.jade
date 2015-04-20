@@ -17,14 +17,21 @@ block body
   section#domos
     if !domos || domos.length == 0
         div.domo
+            h3.emptyDomo Current Total: 0
+    else
+        div.domo
+            h3.mTotal total: #{val.name + " is awesome"}
+  section#domos
+    if !domos || domos.length == 0
+        div.domo
             h3.emptyDomo No Domos yet
     else
         each val in domos
             div.domo
                 img(class="domoFace", src="/assets/img/domoface.jpeg", alt="domo face")
-                h3.domoName Name: #{val.name}
-                h3.domoAge Age: #{val.age}
-                h3.mTotal total: #{val.name + "is awesome"}	
+                h3.domoName Item: #{val.name}
+                h3.domoAge Cost: #{val.age}
+                h3.mTotal total: #{val.name + " is awesome"}	
   #domoMessage
     img#speech(src="/assets/img/speech.png", alt="speech box")
     h3
