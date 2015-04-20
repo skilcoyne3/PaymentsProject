@@ -116,7 +116,7 @@ nav:nth-child(1) {
 
 .mainForm {
     /*height: 300px; */
-	padding: 50px 20px 50px 20px;
+	padding: 0px 20px 30px 20px;
 	width: 350px;
 	margin: 0 auto;
 	text-align: center;
@@ -160,7 +160,7 @@ font-size: 1.1em;
   background-color: #E93D2A;
   border-radius: 2px;
   padding: 10px 0px;
-  color: black;
+  color: white;
   text-decoration: none;
  }
 .mainForm h3 {
@@ -186,7 +186,7 @@ font-size: 1.1em;
 	background-color: #E93D2A;
 	border-radius: 2px;
 	padding: 10px 0px;
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
