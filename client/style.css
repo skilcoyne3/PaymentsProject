@@ -62,7 +62,7 @@ nav:nth-child(1) {
 }
 
 .navlink a:hover {
-	color: grey;
+	color: rgb(74, 74, 74);
 }
 
 .domoForm {
@@ -196,7 +196,7 @@ font-size: 1.1em;
 
 .formSubmit:hover {
     transition: background-color 0.4s ease;
-    background-color: #338acc;
+    background-color: rgb(74, 74, 74);
 }
 
 #user, #pass, #pass2 {
