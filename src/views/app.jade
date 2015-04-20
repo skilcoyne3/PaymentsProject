@@ -19,7 +19,8 @@ block body
         div.domo
             h3.emptyDomo Current Total: 0
     else
-        h3.mTotal total: #{val.name + " is awesome"}
+        val in domos	
+            h3.mTotal total: #{val.name + " is awesome"}
   section#domos
     if !domos || domos.length == 0
         div.domo
