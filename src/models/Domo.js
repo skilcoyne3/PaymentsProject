@@ -54,7 +54,7 @@ DomoSchema.statics.findByOwner = function(ownerId, callback) {
         owner: mongoose.Types.ObjectId(ownerId)
     };
 
-    return DomoModel.find(search).select("name age").exec(callback);
+    return DomoModel.find(search).select("name age cost").exec(callback);
 };
 
 
