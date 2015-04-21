@@ -211,20 +211,13 @@ font-size: 1.1em;
 }
 #domoMessage2 {
     display:none;
-    top: 250px;
-    width: 250px;
-    height: 650px;
-    position: absolute;
-    z-index: 200;
-    right: 0px;
-    overflow: hidden;
-	background: #E93D2A;
+	overflow: hidden;
 }
 #errorMessage2 {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: red;
-    font-style: italic;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: rgb(233, 61, 42);
+	font-style: italic;
 }
 
 #domoMessage {

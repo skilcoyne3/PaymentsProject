@@ -14,11 +14,11 @@ block body
       h2 Login 
       input#user(type="text", name="username", placeholder="username")
       input#pass(type="password", name="pass", placeholder="password")
+      #domoMessage2
+        h3
+          span#errorMessage2 Wrong username or password
       a#loginSubmit(class="formSubmit", href="#") Sign In
       h4 or
       a(href="/signup" class="create") Sign up
-  #domoMessage2
-    h3
-      span#errorMessage2 Wrong username or password
 block scripts
     script(src="/assets/client.js")
