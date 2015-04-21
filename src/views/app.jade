@@ -8,7 +8,7 @@ block body
     .navlink
       a(href="/logout") Log out
   section#paymentsForm
-    form#domoForm(class="domoForm", name="domoForm", action="/maker", method="POST")
+    form#payForm(class="payForm", name="payForm", action="/maker", method="POST")
       label(for="name") Item: 
       input#payItem(type="text", name="name", placeholder="item name")
       label(for="price") Price: 

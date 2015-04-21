@@ -74,7 +74,7 @@ nav:nth-child(1) {
 	color: rgb(74, 74, 74);
 }
 
-.domoForm {
+.payForm {
 	width: 85%;
 	margin: auto;
 	padding-top: 20px;
@@ -85,7 +85,7 @@ nav:nth-child(1) {
 	margin-bottom: 60px;
 }
 
-.domoForm label {
+.payForm label {
 	width: 5%;
 	margin-left: 15px;
 	font-size: 1.2em;
@@ -93,7 +93,7 @@ nav:nth-child(1) {
 	color: white;
 }
 
-.domoForm input[type=text] {
+.payForm input[type=text] {
     float: center;
 	width: 25%;
 }

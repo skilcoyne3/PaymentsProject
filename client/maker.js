@@ -39,7 +39,7 @@ $(document).ready(function() {
             return false;
         }
 
-        sendAjax($("#domoForm").attr("action"), $("#domoForm").serialize());
+        sendAjax($("#payForm").attr("action"), $("#payForm").serialize());
         
         return false;
     });
