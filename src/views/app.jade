@@ -21,7 +21,7 @@ block body
   section#payments
     if !payments || payments.length == 0
         div.onePay
-            h3.emptyDomo Currently No Payments!
+            h3.noPay Currently No Payments!
     else
         each val in payments
             div.onePay
