@@ -24,8 +24,7 @@ var DomoSchema = new mongoose.Schema({
 		type: Number,
 		min: 0, 
 		required: false
-	}
-    
+	},
     owner: 	{
 		type: mongoose.Schema.ObjectId,
 		required: true,
