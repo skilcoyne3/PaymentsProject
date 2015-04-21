@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     function handleError(message) {
         $("#errorMessage").text(message);
-        $("#domoMessage").animate({height:'toggle'},350);
+        $("#domoMessage").animate({height:'toggle'},200);
     }
     
     function sendAjax(action, data) {
@@ -15,7 +15,7 @@ $(document).ready(function() {
             data: data,
             dataType: "json",
             success: function(result, status, xhr) {
-                $("#domoMessage").animate({height:'hide'},350);
+                $("#domoMessage").animate({height:'hide'},200);
 
                 window.location = result.redirect;
             },

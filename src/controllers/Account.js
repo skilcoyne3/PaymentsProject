@@ -21,7 +21,7 @@ var login = function(req, res) {
     var password = req.body.pass;
 
     if(!username || !password) {
-        return res.status(400).json({error: "RAWR! All fields are required"});
+        return res.status(400).json({error: "*All fields required!"});
     }
 
     Account.AccountModel.authenticate(username, password, function(err, account) {
@@ -39,11 +39,11 @@ var login = function(req, res) {
 var signup = function(req, res) {
 
     if(!req.body.username || !req.body.pass || !req.body.pass2) {
-        return res.status(400).json({error: "RAWR! All fields are required"});
+        return res.status(400).json({error: "*All fields required!"});
     }
 
     if(req.body.pass !== req.body.pass2) {
-        return res.status(400).json({error: "RAWR! Passwords do not match"});
+        return res.status(400).json({error: "*Passwords don't match!"});
     }
 	
 	Account.AccountModel.generateHash(req.body.pass, function(salt, hash) {
