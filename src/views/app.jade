@@ -18,8 +18,9 @@ block body
     if !domos || domos.length == 0
         div.domo
             h3.emptyDomo Current Total: 0
-    else	
-        h3.bsTotal Total Cost: #{domos.name + " is awesome"}
+    else
+        each val in domos	
+            h3.bsTotal Total Cost: #{val.name + " is awesome"}
   section#domos
     if !domos || domos.length == 0
         div.domo
@@ -29,7 +30,7 @@ block body
             div.domo
                 h3.domoName Item: #{val.name}
                 h3.domoAge Price: #{"$" + val.age}
-                h3.mTotal Total: #{domos.age}	
+                h3.mTotal Total: #{val.cost}	
   #domoMessage
     img#speech(src="/assets/img/speech.png", alt="speech box")
     h3

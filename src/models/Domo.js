@@ -20,6 +20,11 @@ var DomoSchema = new mongoose.Schema({
         min: 0,
         required: true
     },
+	cost: {
+		type: Number,
+		min: 0, 
+		required: false
+	}
     
     owner: 	{
 		type: mongoose.Schema.ObjectId,
@@ -35,9 +40,11 @@ var DomoSchema = new mongoose.Schema({
 });
 
 DomoSchema.methods.toAPI = function() {
+	this.age += this.cost;
     return {
         name: this.name,
-        age: this.age
+        age: this.age,
+		cost: this.cost
     };
 };
 
