@@ -42,9 +42,10 @@ h4{
 nav {
     width: 100%;
 	height: 100px;
-	/*background-color: #E93D2A;*/
-	background-image: url("img/awesome.jpg");
+	background-color: #E93D2A;
+	/*background-image: url("img/awesome.jpg");*/
 	border-bottom: solid 3px black;
+	
 }
 /*
 nav:nth-child(1) {
@@ -322,19 +323,26 @@ h3.emptyDomo {
 }
 
 h3.domoName {
-	width: 70%;
+	width: 80%;
 	height: 23px;
 	text-align: left;
 	padding-left: 20px;
 }
-
-h3.domoAge {
-	width: 15%;
+h3.title{
+	text-align: center;
+	font-size: 1.6em;
+	color: #E93D2A;
+	font-weight: normal;
+	text-decoration: underline;
 }
-
+h3.domoAge {
+	width: 20%;
+}
+/*
 h3.mTotal{
 	width: 15%;
 }
+*/
 
 /*
 .domo:first-child {

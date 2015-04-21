@@ -13,27 +13,19 @@ block body
       input#domoName(type="text", name="name", placeholder="item name")
       label(for="age") Price: 
       input#domoAge(type="text", name="age", placeholder="cost")
-      input#domoAge(type="text", name="cost", placeholder="rate")
       a#makeDomoSubmit(class="makeDomoSubmit", href="#") Create Item
       #domoMessage
         h3
           span#errorMessage *All fields required!
+  h3.title Your Payments
   section#domos
     if !domos || domos.length == 0
         div.domo
-            h3.emptyDomo Current Total: 0
-    else
-        each val in domos	
-            h3.bsTotal Total Cost: #{val.name + " is awesome"}
-  section#domos
-    if !domos || domos.length == 0
-        div.domo
-            h3.emptyDomo No Domos yet
+            h3.emptyDomo Currently No Payments!
     else
         each val in domos
             div.domo
                 h3.domoName Item: #{val.name}
-                h3.domoAge Price: #{"$" + val.age}
-                h3.mTotal Total: #{val.cost}	
+                h3.domoAge Price: #{"$" + val.age}	
 block scripts
         script(src="/assets/maker.js")
