@@ -30,7 +30,7 @@ $(document).ready(function() {
     $("#makeDomoSubmit").on("click", function(e) {
         e.preventDefault();
     
-        $("#domoMessage").animate({width:'hide'},350);
+        $("#domoMessage").animate({height:'hide'},200);
     
         if($("#domoName").val() == '' || $("#domoAge").val() == '') {
             handleError("*All fields required!");

@@ -30,7 +30,7 @@ $(document).ready(function() {
     $("#signupSubmit").on("click", function(e) {
         e.preventDefault();
     
-        $("#domoMessage").animate({width:'hide'},350);
+        $("#domoMessage").animate({height:'hide'},200);
     
         if($("#user").val() == '' || $("#pass").val() == '' || $("#pass2").val() == '') {
             handleError("*All fields required!");
@@ -50,7 +50,7 @@ $(document).ready(function() {
     $("#loginSubmit").on("click", function(e) {
         e.preventDefault();
     
-        $("#domoMessage").animate({width:'hide'},350);
+        $("#domoMessage").animate({height:'hide'},200);
     
         if($("#user").val() == '' || $("#pass").val() == '') {
             handleError("*Username or password is empty!");
