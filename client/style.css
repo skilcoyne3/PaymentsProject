@@ -214,7 +214,7 @@ font-size: 1.1em;
 	overflow: hidden;
 }
 #errorMessage2 {
-	font-size: 1.2em;
+	font-size: .7em;
 	font-weight: bold;
 	color: rgb(233, 61, 42);
 	font-style: italic;
