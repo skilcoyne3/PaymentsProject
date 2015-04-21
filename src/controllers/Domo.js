@@ -18,13 +18,13 @@ var makerPage = function(req, res) {
 
 var makeDomo = function(req, res) {
 
-    if(!req.body.name || !req.body.age) {
-        return res.status(400).json({error: "name and age required"});
+    if(!req.body.name || !req.body.price) {
+        return res.status(400).json({error: "name and price required"});
     }
     
     var domoData = {
         name: req.body.name,
-        age: req.body.age,
+        price: req.body.price,
 		//cost: req.body.cost,
         owner: req.session.account._id
     };
