@@ -98,7 +98,7 @@ nav:nth-child(1) {
 	width: 25%;
 }
 
-.makeDomoSubmit {
+.paymentsFormSubmit {
 	transition: background-color 0.4s ease;
 	display: inline;
 	font-size: 1em;
@@ -111,11 +111,11 @@ nav:nth-child(1) {
 	padding: 8px;
 }
 
-.makeDomoSubmit:link, .makeDomoSubmit:visited, .makeDomoSubmit:hover, .makeDomoSubmit:active {
+.paymentsFormSubmit:link, .paymentsFormSubmit:visited, .paymentsFormSubmit:hover, .paymentsFormSubmit:active {
     color: white;
 }
 
-.makeDomoSubmit:hover {
+.paymentsFormSubmit:hover {
     transition: background-color 0.2s ease;
     background-color: #C63C2D;
 }

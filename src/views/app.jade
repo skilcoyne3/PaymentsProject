@@ -7,13 +7,13 @@ block body
       p#logo Manage Payments
     .navlink
       a(href="/logout") Log out
-  section#makeDomo
+  section#paymentsForm
     form#domoForm(class="domoForm", name="domoForm", action="/maker", method="POST")
       label(for="name") Item: 
       input#payItem(type="text", name="name", placeholder="item name")
       label(for="price") Price: 
       input#priceItem(type="text", name="price", placeholder="cost")
-      a#makeDomoSubmit(class="makeDomoSubmit", href="#") Create Item
+      a#paymentsFormSubmit(href="#") Create Item
       #domoMessage
         h3
           span#errorMessage *All fields required!

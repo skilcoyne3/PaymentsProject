@@ -29,7 +29,7 @@ $(document).ready(function() {
         });        
     }
     
-    $("#makeDomoSubmit").on("click", function(e) {
+    $("#paymentsFormSubmit").on("click", function(e) {
         e.preventDefault();
     
         $("#domoMessage").animate({height:'hide'},200);
