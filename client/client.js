@@ -4,9 +4,9 @@ $(document).ready(function() {
 
     function handleError(message) {
         $("#errorMessage").text(message);
-        $("#domoMessage").animate({height:'toggle'},200);
+        $("#errorPayments").animate({height:'toggle'},200);
 		$("#errorMessage2").text(message);
-        $("#domoMessage2").animate({height:'toggle'},200);
+        $("#errorLogin").animate({height:'toggle'},200);
     }
     
     function sendAjax(action, data) {
@@ -17,7 +17,7 @@ $(document).ready(function() {
             data: data,
             dataType: "json",
             success: function(result, status, xhr) {
-                $("#domoMessage").animate({height:'hide'},200);
+                $("#errorPayments").animate({height:'hide'},200);
 
                 window.location = result.redirect;
             },
@@ -32,7 +32,7 @@ $(document).ready(function() {
     $("#signupSubmit").on("click", function(e) {
         e.preventDefault();
     
-        $("#domoMessage2").animate({height:'hide'},200);
+        $("#errorLogin").animate({height:'hide'},200);
     
         if($("#user").val() == '' || $("#pass").val() == '' || $("#pass2").val() == '') {
             handleError("*All fields required!");
@@ -52,7 +52,7 @@ $(document).ready(function() {
     $("#loginSubmit").on("click", function(e) {
         e.preventDefault();
     
-        $("#domoMessage2").animate({height:'hide'},200);
+        $("#errorLogin").animate({height:'hide'},200);
     
         if($("#user").val() == '' || $("#pass").val() == '') {
             handleError("*Username or password is empty!");

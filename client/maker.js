@@ -6,7 +6,7 @@ $(document).ready(function() {
         $("#errorMessage").text(message);
         $("#errorPayments").animate({height:'toggle'},200);
 		$("#errorMessage2").text(message);
-        $("#domoMessage2").animate({height:'toggle'},200);
+        $("#errorLogin").animate({height:'toggle'},200);
     }
     
     function sendAjax(action, data) {
