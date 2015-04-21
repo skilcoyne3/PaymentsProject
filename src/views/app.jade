@@ -9,17 +9,17 @@ block body
       a(href="/logout") Log out
   section#makeDomo
     form#domoForm(class="domoForm", name="domoForm", action="/maker", method="POST")
-      label(for="name") Name: 
-      input#domoName(type="text", name="name", placeholder="Domo Name")
-      label(for="age") Age: 
-      input#domoAge(type="text", name="age", placeholder="Domo Age")
-      a#makeDomoSubmit(class="makeDomoSubmit", href="#") Make Domo
+      label(for="name") Item: 
+      input#domoName(type="text", name="name", placeholder="item name")
+      label(for="age") Price: 
+      input#domoAge(type="text", name="age", placeholder="cost")
+      a#makeDomoSubmit(class="makeDomoSubmit", href="#") Create Item
   section#domos
     if !domos || domos.length == 0
         div.domo
             h3.emptyDomo Current Total: 0
     else	
-        h3.mTotal total: #{domos.name}
+        h3.mTotal total: #{domos.name + " is awesome"}
   section#domos
     if !domos || domos.length == 0
         div.domo
@@ -29,7 +29,7 @@ block body
             div.domo
                 h3.domoName Item: #{val.name}
                 h3.domoAge Cost: #{val.age}
-                h3.mTotal total: #{val.name + " is awesome"}	
+                h3.mTotal total: #{val.name}	
   #domoMessage
     img#speech(src="/assets/img/speech.png", alt="speech box")
     h3
