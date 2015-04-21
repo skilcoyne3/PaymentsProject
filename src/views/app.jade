@@ -10,9 +10,9 @@ block body
   section#makeDomo
     form#domoForm(class="domoForm", name="domoForm", action="/maker", method="POST")
       label(for="name") Item: 
-      input#domoName(type="text", name="name", placeholder="item name")
+      input#payItem(type="text", name="name", placeholder="item name")
       label(for="age") Price: 
-      input#domoAge(type="text", name="age", placeholder="cost")
+      input#priceItem(type="text", name="age", placeholder="cost")
       a#makeDomoSubmit(class="makeDomoSubmit", href="#") Create Item
       #domoMessage
         h3
@@ -25,7 +25,7 @@ block body
     else
         each val in domos
             div.domo
-                h3.domoName Item: #{val.name}
-                h3.domoAge Price: #{"$" + val.age}	
+                h3.payItem Item: #{val.name}
+                h3.priceItem Price: #{"$" + val.age}	
 block scripts
         script(src="/assets/maker.js")

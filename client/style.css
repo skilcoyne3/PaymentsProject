@@ -322,7 +322,7 @@ h3.emptyDomo {
     margin-top: 18px;
 }
 
-h3.domoName {
+h3.payItem {
 	width: 80%;
 	height: 23px;
 	text-align: left;
@@ -335,7 +335,8 @@ h3.title{
 	font-weight: normal;
 	text-decoration: underline;
 }
-h3.domoAge {
+h3.priceItem {
+h3.priceItem {
 	width: 20%;
 }
 /*

@@ -34,7 +34,7 @@ $(document).ready(function() {
     
         $("#domoMessage").animate({height:'hide'},200);
     
-        if($("#domoName").val() == '' || $("#domoAge").val() == '') {
+        if($("#payItem").val() == '' || $("#priceItem").val() == '') {
             handleError("*All fields required!");
             return false;
         }
