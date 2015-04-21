@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     function handleError(message) {
         $("#errorMessage").text(message);
-        $("#domoMessage").animate({height:'toggle'},200);
+        $("#errorPayments").animate({height:'toggle'},200);
 		$("#errorMessage2").text(message);
         $("#domoMessage2").animate({height:'toggle'},200);
     }
@@ -17,7 +17,7 @@ $(document).ready(function() {
             data: data,
             dataType: "json",
             success: function(result, status, xhr) {
-                $("#domoMessage").animate({height:'hide'},200);
+                $("#errorPayments").animate({height:'hide'},200);
 
                 window.location = result.redirect;
             },
@@ -32,7 +32,7 @@ $(document).ready(function() {
     $("#paymentsFormSubmit").on("click", function(e) {
         e.preventDefault();
     
-        $("#domoMessage").animate({height:'hide'},200);
+        $("#errorPayments").animate({height:'hide'},200);
     
         if($("#payItem").val() == '' || $("#priceItem").val() == '') {
             handleError("*All fields required!");
