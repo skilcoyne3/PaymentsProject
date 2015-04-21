@@ -25,7 +25,7 @@ var makeDomo = function(req, res) {
     var domoData = {
         name: req.body.name,
         age: req.body.age,
-		cost: req.body.cost,
+		//cost: req.body.age,
         owner: req.session.account._id
     };
     
