@@ -4,7 +4,7 @@ block append style
 block body
   nav
     a(href="/login")
-      img#logo(src="/assets/img/face.png", alt="face logo")
+      p#logo Manage Payments
     .navlink
       a(href="/logout") Log out
   section#makeDomo
@@ -27,7 +27,6 @@ block body
     else
         each val in domos
             div.domo
-                img(class="domoFace", src="/assets/img/domoface.jpeg", alt="domo face")
                 h3.domoName Item: #{val.name}
                 h3.domoAge Cost: #{val.age}
                 h3.mTotal total: #{val.name + " is awesome"}	
