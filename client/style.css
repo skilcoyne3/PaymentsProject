@@ -298,19 +298,19 @@ h3.emptyDomo {
 
 h3.domoName {
 	width: 70%;
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.5em;
+	height: 23px;
+	text-align: left;
+	padding-left: 20px;
 }
 
 h3.domoAge {
 	width: 15%;
 }
-/*
+
 h3.mTotal{
 	width: 15%;
 }
-*/
+
 /*
 .domo:first-child {
     margin-top: 10px;
