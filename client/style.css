@@ -66,42 +66,40 @@ nav:nth-child(1) {
 }
 
 .domoForm {
-    border: 2px solid #338acc;
-    height: 35px;
-    width: 700px;
-    margin-top:0px;
-    padding-top:10px;
-    background-color: #55acee;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
+	width: 85%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(74, 74, 74);
+	border-radius: 0px;
+	text-align: center;
+	margin-bottom: 60px;
 }
 
 .domoForm label {
-    display: inline-block;
-    width: 75px;
-    margin-left: 10px;
-    font-size: 1.2em;
-    float: left;
-    color: white;
+	width: 5%;
+	margin-left: 15px;
+	font-size: 1.2em;
+	float: center;
+	color: white;
 }
 
 .domoForm input[type=text] {
-    float:left;
+    float: center;
+	width: 25%;
 }
 
 .makeDomoSubmit {
-    transition: background-color 0.4s ease;
-    display: inline;
-    margin-top: 14px;
-    font-size: 1.2em;
-    width: 90px;
-    background-color: #55acee;
-    border-radius: 2px;
-    padding: 3px 0px;
-    color: black;
-    text-decoration: none;
-    margin-left: 45px;
-    padding: 5px;
+	transition: background-color 0.4s ease;
+	display: inline;
+	font-size: 1em;
+	width: 20%;
+	background-color: #E93D2A;
+	border-radius: 2px;
+	color: white;
+	text-decoration: none;
+	margin-left: 6%;
+	padding: 8px;
 }
 
 .makeDomoSubmit:link, .makeDomoSubmit:visited, .makeDomoSubmit:hover, .makeDomoSubmit:active {
@@ -109,8 +107,8 @@ nav:nth-child(1) {
 }
 
 .makeDomoSubmit:hover {
-    transition: background-color 0.4s ease;
-    background-color: #338acc;
+    transition: background-color 0.2s ease;
+    background-color: #C63C2D;
 }
 
 
@@ -254,32 +252,29 @@ font-size: 1.1em;
 }
 
 #domos {
-    width: 40%;
-    min-width: 400px;
-    border: 2px solid #55acee;
-    border-radius: 4px;
-    margin: 0 auto;
-    margin-top: 100px;
+	width: 95%;
+	min-width: 400px;
+	border-radius: 4px;
+	margin: 0 auto;
 }
 
 .domo {
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    border: 2px solid #55acee;
-    border-radius: 4px;
-    background-color: #55acee;
-    padding: 10px;
-    min-height:60px;
-    overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 2px;
+	border-radius: 4px;
+	background-color: #EBEBEB;
+	/* background-color: rgb(222, 222, 222); */
+	min-height: 60px;
+	overflow: hidden;
+	display: inline-flex;
 }
 
 .domo:hover {
     transition: border-color 0.2s ease-out;
-    border-color: rgba(255,255,255, 0.8);
+    /*border-color: rgba(255,255,255, 0.8);*/
     transition: background-color 2.6s ease-out;
-    background-color: #66bfff;
+    background-color: rgb(222, 222, 222);
 }
 
 img.domoFace {
@@ -301,22 +296,20 @@ h3.emptyDomo {
 }
 
 h3.domoName {
-    float:left;
-    width: 200px;
-    font-weight: bold;
-    padding-left: 65px;
-    font-size: 1.5em;
+	width: 70%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 h3.domoAge {
-    float:right;
-    text-align: left;
-    width: 100px;
-    font-weight: bold;
-    padding-right: 40px;
-    font-size: 1.5em;
+	width: 15%;
 }
 
+h3.mTotal{
+	width: 15%;
+}
+/*
 .domo:first-child {
     margin-top: 10px;
 }
@@ -324,3 +317,4 @@ h3.domoAge {
 .domo:last-child {
     margin-bottom:10px;
 }
+*/
