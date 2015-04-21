@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var _ = require('underscore');
+var cost;
 
 var DomoModel;
 
@@ -20,11 +21,11 @@ var DomoSchema = new mongoose.Schema({
         min: 0,
         required: true
     },
-	cost: {
+	/*cost: {
 		type: Number,
 		min: 0, 
 		required: false
-	},
+	},*/
     owner: 	{
 		type: mongoose.Schema.ObjectId,
 		required: true,
@@ -39,11 +40,11 @@ var DomoSchema = new mongoose.Schema({
 });
 
 DomoSchema.methods.toAPI = function() {
-	this.cost = this.age; 
+	cost = this.age; 
     return {
         name: this.name,
         age: this.age,
-		cost: this.cost
+		//cost: this.cost
     };
 };
 
@@ -53,7 +54,7 @@ DomoSchema.statics.findByOwner = function(ownerId, callback) {
         owner: mongoose.Types.ObjectId(ownerId)
     };
 
-    return DomoModel.find(search).select("name age cost").exec(callback);
+    return DomoModel.find(search).select("name age").exec(callback);
 };
 
 
