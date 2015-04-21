@@ -19,7 +19,7 @@ var makerPage = function(req, res) {
 var makeDomo = function(req, res) {
 
     if(!req.body.name || !req.body.age) {
-        return res.status(400).json({error: "RAWR! Both name and age are required"});
+        return res.status(400).json({error: "name and age required"});
     }
     
     var domoData = {
