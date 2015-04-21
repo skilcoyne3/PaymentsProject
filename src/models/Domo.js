@@ -40,7 +40,7 @@ var DomoSchema = new mongoose.Schema({
 });
 
 DomoSchema.methods.toAPI = function() {
-	cost = this.age; 
+	this.cost = this.age; 
     return {
         name: this.name,
         age: this.age,
