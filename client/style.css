@@ -266,7 +266,7 @@ font-size: 1.1em;
 	color: white;
 	font-style: italic;
 }
-
+/*
 #domo {
     z-index: 225;
     margin-top: -20px;
@@ -277,15 +277,16 @@ font-size: 1.1em;
     -webkit-transform: rotate(330deg); 
     transform: rotate(330deg);
 }
+*/
 
-#pay {
+#payments {
 	width: 95%;
 	min-width: 400px;
 	border-radius: 4px;
 	margin: 0 auto;
 }
 
-.domo {
+.onePay {
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 2px;
@@ -297,7 +298,7 @@ font-size: 1.1em;
 	display: inline-flex;
 }
 
-.domo:hover {
+.onePay:hover {
     transition: border-color 0.2s ease-out;
     /*border-color: rgba(255,255,255, 0.8);*/
     transition: background-color 2.6s ease-out;
@@ -342,15 +343,5 @@ h3.priceItem {
 /*
 h3.mTotal{
 	width: 15%;
-}
-*/
-
-/*
-.domo:first-child {
-    margin-top: 10px;
-}
-
-.domo:last-child {
-    margin-bottom:10px;
 }
 */

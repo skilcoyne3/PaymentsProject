@@ -18,13 +18,13 @@ block body
         h3
           span#errorMessage *All fields required!
   h3.title Your Payments
-  section#pay
-    if !pay || pay.length == 0
-        div.domo
+  section#payments
+    if !payments || payments.length == 0
+        div.onePay
             h3.emptyDomo Currently No Payments!
     else
-        each val in pay
-            div.domo
+        each val in payments
+            div.onePay
                 h3.payItem Item: #{val.name}
                 h3.priceItem Price: #{"$" + val.price}	
 block scripts

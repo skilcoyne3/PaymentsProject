@@ -12,7 +12,7 @@ var makerPage = function(req, res) {
             return res.status(400).json({error:'An error occurred'}); 
         }
         
-        res.render('app', {pay: docs});
+        res.render('app', {payments: docs});
     });
 };
 
