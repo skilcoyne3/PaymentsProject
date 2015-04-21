@@ -212,6 +212,7 @@ font-size: 1.1em;
 #domoMessage2 {
     display:none;
 	overflow: hidden;
+	text-align: center;
 }
 #errorMessage2 {
 	font-size: .7em;
