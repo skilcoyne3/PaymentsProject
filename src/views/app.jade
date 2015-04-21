@@ -14,6 +14,9 @@ block body
       label(for="age") Price: 
       input#domoAge(type="text", name="age", placeholder="cost")
       a#makeDomoSubmit(class="makeDomoSubmit", href="#") Create Item
+	  #domoMessage
+        h3
+          span#errorMessage *All fields required!
   section#domos
     if !domos || domos.length == 0
         div.domo
@@ -31,10 +34,5 @@ block body
                 h3.domoName Item: #{val.name}
                 h3.domoAge Price: #{"$" + val.age}
                 h3.mTotal Total: #{val.cost}	
-  #domoMessage
-    img#speech(src="/assets/img/speech.png", alt="speech box")
-    h3
-      span#errorMessage
-    img#domo(src="assets/img/domo.png", alt="domo")
 block scripts
         script(src="/assets/maker.js")
