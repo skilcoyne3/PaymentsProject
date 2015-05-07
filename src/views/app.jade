@@ -23,6 +23,10 @@ block body
         div.onePay
             h3.noPay Currently No Payments!
     else
+       div
+          - var payment = payments[payments.length-1]
+		  - var totalPrice = 0 + payment.price  
+           h3 #{"total payments " + totalPrice}
         each val in payments
             div.onePay
                 h3.payItem Item: #{val.name}
