@@ -1,0 +1,35 @@
+extends ./base.jade
+block append style
+    link(rel="stylesheet", type="text/css", href="/assets/style.css")
+block body
+  nav
+    a(href='/login')
+      img#logo(src='/assets/img/Log.png', alt='logo')
+    .navLinks
+      a#menu-icon(href='#')
+      ul
+        li
+          .navlink
+            a(href='/logout') Log out
+        li
+          .navlink
+            a(href='/home') Add Payment
+        li
+          .navlink
+            a(href='/maker') Account
+  section#paymentsForm
+    form#payForm(class="payForm",name='payForm', action='/maker', method='POST')
+      h3.fastTitle Payday Deposit 
+      div.inp
+        input#payItem(type='hidden', name='name', value="Payday Deposit")
+      div.inp
+        label(for='price') Payday Amount:
+        input.PosNeg(type='hidden', name='type', value="+")
+        input#priceItem(type='text', name='price', placeholder='cost')
+      div.inp
+          a#paymentsFormSubmit(class="paymentsFormSubmit", href="#") Create Payday
+      #errorPayments
+        h3
+          span#errorMessage *All fields required!
+block scripts
+        script(src="/assets/maker.js")
